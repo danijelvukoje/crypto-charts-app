@@ -6,12 +6,13 @@ const app = express();
 
 app.use(cors());
 
-app.get('/api/:coinId/:startDate/:endDate', (req, res) => {
+app.get('/api/:coinId/:startDate/:endDate/:interval', (req, res) => {
   const coinId = req.params.coinId;
   const startDate = req.params.startDate;
   const endDate = req.params.endDate;
+  const interval = req.params.interval;
   console.log(`called with ${coinId}, ${startDate}, ${endDate}`);
-  fetch(`https://api.coinpaprika.com/v1/tickers/${coinId}/historical?start=${startDate}&end=${endDate}&interval=1d&limit=5000`)
+  fetch(`https://api.coinpaprika.com/v1/tickers/${coinId}/historical?start=${startDate}&end=${endDate}&interval=${interval}&limit=5000`)
     .then(res => res.json())
     .then(data => res.send(data))
     .catch(e => console.log(e));
