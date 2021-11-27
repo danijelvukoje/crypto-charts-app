@@ -1,0 +1,48 @@
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&display=swap');
+
+
+/* CSS RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* STYLES */
+
+:root {
+  --main-bg-shade: #0e0e0e91;
+  --primary-black-color: #0f0f0f;
+  --primary-linen-color: #e9dcc9;
+  --secondary-linen-color: #e9dcc959;
+  --primary-green: #0799618f;
+  --accent-green: #079961af;
+  --primary-red: #ff142d66;
+  --accent-red: #ff142b7a;
+  --button-accent-red: #ff142b79;
+  --button-green: #04aa6dd0;
+  --button-accent-green: #079961cc;
+}
+
+html {
+  /* background: url("https://images.unsplash.com/photo-1611325058432-30bee87d45c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80") no-repeat center center fixed;
+  background-size: cover; */
+  background: linear-gradient(45deg, rgba(253, 198, 169, 0.219), white);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  min-height: 100vh;
+  height: 100%;
+  min-width: 100vw;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Chivo', sans-serif;
+  color: var(--primary-black-color);
+}

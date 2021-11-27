@@ -1,0 +1,9 @@
+.header {
+  margin-top: 6.5vmin;
+  margin-bottom: 4vmin;
+}
+
+.header__h1 {
+  text-align: center;
+  font-size: 5vmax;
+}

@@ -1,0 +1,64 @@
+.chart-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-info {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  margin: 2vh 0;
+  margin-left: 10vw;
+}
+
+.chart-info__p {
+  font-weight: bold;
+  margin: 1vh 0;
+  width: 25vw;
+}
+
+.chart-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8vh;
+}
+
+.chart-button--update {
+  align-self: center;
+  padding: 0.5vmin;
+  margin-top: 1vmin;
+  margin-right: 1vw;
+  width: 15vw;
+  min-width: 20vmin;
+  border: 0.1vmin solid var(--secondary-linen-color);
+  border-radius: 0.35vmin;
+  background: var(--button-green);
+  color: white;
+  font-family: 'Chivo', sans-serif;
+  font-size: 1.25vmax;
+  cursor: pointer;
+}
+
+.chart-button--update:hover {
+  background: var(--button-accent-green);
+}
+
+.chart-button--remove {
+  align-self: center;
+  padding: 0.5vmin;
+  margin-top: 1vmin;
+  margin-left: 1vw;
+  width: 15vw;
+  min-width: 20vmin;
+  border: 0.1vmin solid var(--secondary-linen-color);
+  border-radius: 0.35vmin;
+  background: var(--primary-red);
+  color: white;
+  font-family: 'Chivo', sans-serif;
+  font-size: 1.25vmax;
+  cursor: pointer;
+}
+
+.chart-button--remove:hover {
+  background: var(--button-accent-red);
+}

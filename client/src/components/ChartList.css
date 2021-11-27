@@ -1,0 +1,7 @@
+.chart-list {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 85vw;
+  margin: 4vh auto;
+}
